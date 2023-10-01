@@ -1,7 +1,6 @@
-import React, {useRef } from "react";
+import React, { useRef } from "react";
 import "./ContactMe.css";
 import emailjs from "@emailjs/browser";
-
 
 const ContactMe = () => {
   const form = useRef();
@@ -26,7 +25,7 @@ const ContactMe = () => {
       );
     e.target.reset();
   }
-  
+
   return (
     <>
       <section id="contact">
@@ -46,36 +45,32 @@ const ContactMe = () => {
               </div>
             </div>
 
-            <form 
+            <form
               action=""
               className="subscribe-form"
               ref={form}
               onSubmit={sendEmail} >
-                {/* class="col-lg-4 col-md-7" */}
-            <div className="email">
-              <div class="work-togather-form">
-                <input
-                  type="email"
-                  name="user_email"
-                  id="user_email"
-                  class="form-input-one subscribe-input"
-                  placeholder="Email Address"
-                  required=""
-                  
-                />
-              </div>
-            </div>
-            {/* class="col-lg-3 col-md-4" */}
-            <div className="button" >
-              <div class="work-togather-form-btn">
-                <button type="submit" class="sec-btn">
-                  Subscribe Now
-                </button>
-              </div>
-            </div>
-            </form>
-            
+              <div className="email">
+                <div class="work-togather-form">
+                  <input
+                    type="email"
+                    name="user_email"
+                    id="user_email"
+                    class="form-input-one subscribe-input"
+                    placeholder="Email Address"
+                    required=""
 
+                  />
+                </div>
+              </div>
+              <div className="button" >
+                <div class="work-togather-form-btn">
+                  <button type="submit" class="sec-btn">
+                    Subscribe Now
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>

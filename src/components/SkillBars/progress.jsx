@@ -1,6 +1,4 @@
 import "./progress.css";
-import { useGetLanguagesIconsQuery } from "../../Api/api";
-import { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import $ from "jquery";
@@ -42,34 +40,23 @@ if (nav.length) {
 
 const Progress = () => {
 
-  const icons =[
-    // {lang_name: "Java" , icon: c , exp_level: "Bigineer" },
-    // {lang_name: "Java" , icon: java , exp_level: "Bigineer" },
-    // {lang_name: "Java" , icon: html , exp_level: "Bigineer" },
-    // {lang_name: "Java" , icon: java , exp_level: "Bigineer" },
-    // {lang_name: "Java" , icon: java , exp_level: "Bigineer" },
-    // {lang_name: "Java" , icon: java , exp_level: "Bigineer" }
-
-
-    {lang_name: "C++" , icon: c , exp_level: "Bigineer" },
-    {lang_name: "Java" , icon: java , exp_level: "Bigineer" },
-    {lang_name: "HTML" , icon: html , exp_level: "Bigineer" },
-    {lang_name: "CSS" , icon: css , exp_level: "Bigineer" },
-    {lang_name: "React" , icon: react , exp_level: "Bigineer" },
-    {lang_name: "Angular" , icon: angular , exp_level: "Bigineer" },
-
-    {lang_name: "Javascript" , icon: javascript , exp_level: "Bigineer" },
-    {lang_name: "Typescript" , icon: typescript , exp_level: "Bigineer" },
-    {lang_name: "Next Js" , icon: nextJs , exp_level: "Bigineer" },
-    {lang_name: "MYSQL" , icon: mysql , exp_level: "Bigineer" },
-    {lang_name: "Node Js" , icon: nodeJs , exp_level: "Bigineer" },
-    {lang_name: "Express" , icon: express , exp_level: "Bigineer" },
-    {lang_name: "Flutter" , icon: flutter , exp_level: "Bigineer" },
-    {lang_name: "Jest" , icon: jest , exp_level: "Bigineer" },
-    {lang_name: "Word Press" , icon: wordpress , exp_level: "Bigineer" },
+  const icons = [
+    { lang_name: "C++", icon: c, exp_level: "Bigineer" },
+    { lang_name: "Java", icon: java, exp_level: "Bigineer" },
+    { lang_name: "HTML", icon: html, exp_level: "Bigineer" },
+    { lang_name: "CSS", icon: css, exp_level: "Bigineer" },
+    { lang_name: "React", icon: react, exp_level: "Bigineer" },
+    { lang_name: "Angular", icon: angular, exp_level: "Bigineer" },
+    { lang_name: "Javascript", icon: javascript, exp_level: "Bigineer" },
+    { lang_name: "Typescript", icon: typescript, exp_level: "Bigineer" },
+    { lang_name: "Next Js", icon: nextJs, exp_level: "Bigineer" },
+    { lang_name: "MYSQL", icon: mysql, exp_level: "Bigineer" },
+    { lang_name: "Node Js", icon: nodeJs, exp_level: "Bigineer" },
+    { lang_name: "Express", icon: express, exp_level: "Bigineer" },
+    { lang_name: "Flutter", icon: flutter, exp_level: "Bigineer" },
+    { lang_name: "Jest", icon: jest, exp_level: "Bigineer" },
+    { lang_name: "Word Press", icon: wordpress, exp_level: "Bigineer" },
   ]
-    
-
 
   const responsive = {
     0: {
@@ -130,7 +117,6 @@ const Progress = () => {
             <img src={detal.icon} alt="" />
           </div>
           <h3>{detal.lang_name}</h3>
-          {/* <p className={`${detal.exp_level}`}>{detal.exp_level}</p> */}
         </div>
       </div>
     );
@@ -141,7 +127,6 @@ const Progress = () => {
         <div className="progress-container">
           <div className="progress-title">
             <h2>My Skills Progress so far</h2>
-
             <h3>My Skills</h3>
           </div>
           <div className="progress-row2">
@@ -156,20 +141,6 @@ const Progress = () => {
                 items={items}
                 responsive={responsive}
               />
-              {/* {icons && icons.map((icon) =>(
-                <div className="mylang" title={icon.lang_name} key={icon.id}>
-                <div className="lang-info">
-                  <div className="lang-img">
-                    <img src={icon.icon} alt="" />
-                  </div>
-                  <h3>{icon.lang_name}</h3>
-                  <p className={`${detal.exp_level}`}>{detal.exp_level}</p>
-                </div>
-              </div>
-              ))} */}
-
-
-
             </div>
           </div>
         </div>

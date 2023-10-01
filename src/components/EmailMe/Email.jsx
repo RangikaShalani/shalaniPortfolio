@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./Email.css";
-import { useGetContactsQuery } from "../../Api/api";
 import emailjs from "@emailjs/browser";
 
 const Email = (e) => {
@@ -8,7 +7,7 @@ const Email = (e) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    
+
     emailjs
       .sendForm(
         "service_zfhr45b",
@@ -26,22 +25,14 @@ const Email = (e) => {
       );
     e.target.reset();
   };
-  // const { data: contacts, isFetching } = useGetContactsQuery();
 
-  // const [contactsDetails, setContactDetails] = useState(contacts);
-  // const img_300 = "http://127.0.0.1:8000";
-  // useEffect(() => {
-  //   setContactDetails(contacts);
-  // }, [contactsDetails, contacts]);
-  // if (isFetching) return "loading";
+  const contactDetails = [
+    { icon: "fa-solid fa-phone-volume", contact_name: "phone", contact_info: "0711936465 / 0760657654", linkurl: "tel:+94711936465" },
+    { icon: "fa-regular fa-envelope", contact_name: "Email", contact_info: "rangika2520@gmail.com", linkurl: "mailto:rangika2520@gmail.com" },
+    { icon: "fa-solid fa-house-chimney-user", contact_name: "Address", contact_info: "No: 113/01 , Iththademaliya , Walasmulla", linkurl: "https://maps.app.goo.gl/YE5jjDq3JzUVBbtR7" }
+  ]
 
-const contactDetails =[
-  {icon:"fa-solid fa-phone-volume", contact_name:"phone", contact_info: "0711936465 / 0760657654" , linkurl:"tel:+94711936465"},
-  {icon:"fa-regular fa-envelope", contact_name:"Email", contact_info: "rangika2520@gmail.com" , linkurl:"mailto:rangika2520@gmail.com"},
-  {icon:"fa-solid fa-house-chimney-user", contact_name:"Address", contact_info: "No: 113/01 , Iththademaliya , Walasmulla" , linkurl:"https://maps.app.goo.gl/YE5jjDq3JzUVBbtR7"}
-]
-
-return (
+  return (
     <>
       <div className="reachme-container">
         <div className="reachme-title2">
@@ -57,13 +48,13 @@ return (
                   contactDetails.map((details) => (
                     <div className="contact-info  " key={details.id}>
                       <a href={details.linkurl}>
-                      <div className="contact-details">
-                        <i className={details.icon}></i>
-                        <div className="contact-mi">
-                          <h4 className="icon-name">{details.contact_name}:</h4>
-                          <p className="d-name">{details.contact_info}</p>
+                        <div className="contact-details">
+                          <i className={details.icon}></i>
+                          <div className="contact-mi">
+                            <h4 className="icon-name">{details.contact_name}:</h4>
+                            <p className="d-name">{details.contact_info}</p>
+                          </div>
                         </div>
-                      </div>
                       </a>
                     </div>
                   ))}
