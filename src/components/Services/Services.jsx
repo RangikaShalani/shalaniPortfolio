@@ -1,26 +1,14 @@
 import "./Services.css";
-import { useGetServicesQuery } from "../../Api/api";
-import { useEffect, useState } from "react";
-// import iconImage from "../../images/decoration/download.webp";
 import iconImage from "../../images/decoration/FlashWork.png";
 import shadowIcon from "../../images/decoration/Group-31.png";
 
 const Services = () => {
-  // const { data: services, isFetching } = useGetServicesQuery();
-  // const [servicesDetails, setServicesDetails] = useState(services);
-  // const img_300 = "http://drive.google.com/uc?id=";
-
-  // useEffect(() => {
-  //   setServicesDetails(services);
-  //   console.log(servicesDetails);
-  // }, [servicesDetails, services]);
-  // if (isFetching) return "loading";
 
   const serviesList = [
-    {icon_image : iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.",shadow_icon: shadowIcon },
-    {icon_image : iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.",shadow_icon: shadowIcon },
-    {icon_image : iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.",shadow_icon: shadowIcon },
-    {icon_image : iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.",shadow_icon: shadowIcon },
+    { icon_image: iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.", shadow_icon: shadowIcon },
+    { icon_image: iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.", shadow_icon: shadowIcon },
+    { icon_image: iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.", shadow_icon: shadowIcon },
+    { icon_image: iconImage, service_name: "Presetation", service_description: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href", learn_more: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles.", shadow_icon: shadowIcon },
   ]
 
   return (
@@ -29,7 +17,6 @@ const Services = () => {
         <div className="service-container">
           <div className="service-title">
             <h2>What Service i Offer you</h2>
-
             <h3>Services</h3>
           </div>
 
@@ -42,15 +29,9 @@ const Services = () => {
                   data-aos="zoom-in-up"
                   data-aos-duration="1500"
                 >
-                  {/* <div className="ser-back"> */}
-                    <img src={`${service.icon_image}`} className="blog-image" alt="" />
-                  {/* </div> */}
+                  <img src={`${service.icon_image}`} className="blog-image" alt="" />
                   <h4 className="web">{service.service_name}</h4>
                   <p className="service-info">{service.service_description}</p>
-                  {/* <h6 className="learn-more">{service.learn_more}</h6>
-                  <div class="shadow-icon">
-                    <i class={service.shadow_icon}></i>
-                  </div> */}
                 </div>
               ))}
           </div>

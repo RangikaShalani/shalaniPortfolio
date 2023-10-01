@@ -1,5 +1,3 @@
-import { useGetProjectsQuery } from "../../Api/api";
-import { useEffect, useState } from "react";
 import "./projects.css";
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
@@ -10,13 +8,11 @@ import fitbotimage from "../../images/decoration/Fitbot.jpg"
 import flashworkimage from "../../images/decoration/FlashWork.png"
 
 const Projects = () => {
-  // const img_300 = "http://drive.google.com/uc?id=";
-
-  const projectsDetails =[
-    {about_avatar: fitbotimage , language_used: ["HTML |"  ," CSS |"," JavaScript |"," JQuery |"," AjAx |"," Java |"," MySQL"] , Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "https://dribbble.com/shots/22705353-GYM-Management-System-Landing-page-and-a-few-other-similar-page " , project_link: "https://github.com/FITBOT-Gym-Management-System"},
-    {about_avatar: flashworkimage , language_used: ["Node js + Express |"  ," React |"," TypeScript |"," Material UI |"," MySQL"] , Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "https://dribbble.com/shots/22692811-Online-Job-Advertisement-Site" , project_link: "https://github.com/Flashwork-G28"},
-    {about_avatar: projectimage , language_used: ["sjc"  ,"sdkc","language"] , Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "youtub link" , project_link: "git link"},
-    ]
+  const projectsDetails = [
+    { about_avatar: fitbotimage, language_used: ["HTML |", " CSS |", " JavaScript |", " JQuery |", " AjAx |", " Java |", " MySQL"], Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "https://dribbble.com/shots/22705353-GYM-Management-System-Landing-page-and-a-few-other-similar-page ", project_link: "https://github.com/FITBOT-Gym-Management-System" },
+    { about_avatar: flashworkimage, language_used: ["Node js + Express |", " React |", " TypeScript |", " Material UI |", " MySQL"], Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "https://dribbble.com/shots/22692811-Online-Job-Advertisement-Site", project_link: "https://github.com/Flashwork-G28" },
+    { about_avatar: projectimage, language_used: ["sjc", "sdkc", "language"], Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "youtub link", project_link: "git link" },
+  ]
   const options = {
     margin: 30,
     responsiveClass: true,
