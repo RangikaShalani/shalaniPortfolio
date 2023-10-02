@@ -25,11 +25,15 @@ const Email = (e) => {
       );
     e.target.reset();
   };
-
+{/* <i class="fa-solid fa-location-dot"></i> */}
+// fa-solid fa-house-chimney-user
+// 0711936465 / 0760657654
+// No: 113/01 , Walasmulla
   const contactDetails = [
     { icon: "fa-solid fa-phone-volume", contact_name: "phone", contact_info: "0711936465 / 0760657654", linkurl: "tel:+94711936465" },
     { icon: "fa-regular fa-envelope", contact_name: "Email", contact_info: "rangika2520@gmail.com", linkurl: "mailto:rangika2520@gmail.com" },
-    { icon: "fa-solid fa-house-chimney-user", contact_name: "Address", contact_info: "No: 113/01 , Iththademaliya , Walasmulla", linkurl: "https://maps.app.goo.gl/YE5jjDq3JzUVBbtR7" }
+    // { icon: "fa-solid fa-location-dot", contact_name: "Address", contact_info: "No: 113/01 , Iththademaliya , Walasmulla", linkurl: "https://maps.app.goo.gl/YE5jjDq3JzUVBbtR7" },
+    { icon: "fa-solid fa-house-chimney-user", contact_name: "Address", contact_info: "No: 113/01 , Walasmulla", linkurl: "mailto:rangika2520@gmail.com" }
   ]
 
   return (
