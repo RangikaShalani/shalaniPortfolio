@@ -116,7 +116,7 @@
   height: 80px;
   width: 80px;
   border-radius: 150px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .contact-info:nth-child(1) i {
   color: #f06a6a !important;
@@ -132,15 +132,15 @@
 }
 
 @media only screen and (max-width: 689px) {
-  .reachme-title .row {
+  /* .reachme-title .row {
     justify-content: center;
-  }
+  } */
   .reachme-title h2 {
     text-align: center;
   }
-  .reachme-title p {
+  /* .reachme-title p {
     text-align: center;
-  }
+  } */
 }
 @media only screen and (max-width: 550px) {
   .email-me {
@@ -148,6 +148,12 @@
   }
   .reachme-container {
     padding: 10px;
+  }
+  .contact-info i {
+    font-size: 15px;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
   }
 }
 .light .contact-info {
