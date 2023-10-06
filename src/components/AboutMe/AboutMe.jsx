@@ -44,12 +44,11 @@ const AboutMe = () => {
                     className="myinfo"
                     data-aos="fade-down"
                     data-aos-duration="1800" >
-                    I am excited to apply for the Associate software engineer position at your company. I have
-                    gained valuable experience in developing, testing, and deploying software applications. Over
-                    the past 6 months, I have successfully contributed to various projects, working collaboratively
-                    with cross-functional teams to deliver high-quality solutions. My technical expertise includes
-                    proficiency in programming languages such as Java, Scala, C, and C++, as well as experience
-                    with modern software development frameworks and tools.
+                    Hi, I am a full-stack developer who is creating my own version of the digital world gradually. 
+                    I like to undertake challenges and problem solving even if it's hard as well and I am the type of person who enjoys coding. 
+                    I am self-motivated, and hardworking, and try to learn new technologies while living IT industry. 
+                    I am building my personality and knowledge to develop high-quality web and mobile applications for real-time problems. 
+                    I hope to learn machine learning in the future and grow on that path.
                   </p>
                 </div>
               </div>
