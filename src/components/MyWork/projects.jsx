@@ -6,12 +6,13 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import projectimage from "../../images/decoration/project-01.png"
 import fitbotimage from "../../images/decoration/Fitbot.jpg"
 import flashworkimage from "../../images/decoration/FlashWork.png"
+import booklabimage from "../../images/decoration/BookLab.png"
 
 const Projects = () => {
   const projectsDetails = [
     { about_avatar: fitbotimage, language_used: ["HTML |", " CSS |", " JavaScript |", " JQuery |", " AjAx |", " Java |", " MySQL"], Project_info: "FitBot is a gym management system. we developed it to handle the gym members, and branches and store the records about gym equipment and machines and their maintainers. Did all CRUD, payment, and form validation, and used a sorting algorithm to complete that project.", demo_link: "https://dribbble.com/shots/22705353-GYM-Management-System-Landing-page-and-a-few-other-similar-page ", project_link: "https://github.com/FITBOT-Gym-Management-System" },
     { about_avatar: flashworkimage, language_used: ["Node js + Express |", " React |", " TypeScript |", " Material UI |", " MySQL"], Project_info: "Flashwork is a contract basic job advertisements and part-time employees hearing platform. This is a mobile responsive web application. In this, users can publish the advertisements and they also can hear the website registered working employees. ", demo_link: "https://dribbble.com/shots/22692811-Online-Job-Advertisement-Site", project_link: "https://github.com/Flashwork-G28" },
-    { about_avatar: projectimage, language_used: ["sjc", "sdkc", "language"], Project_info: "I am eager to learn more about the Associate software engineer position at your company and how I can contribute to your team's goals and objectives. I would welcome the opportunity to discuss my qualifications further in an interview.", demo_link: "youtub link", project_link: "git link" },
+    { about_avatar: booklabimage, language_used: ["Node Js"," React |", " TypeScript |" ," Bootstrap |", " MySQL"], Project_info: "Book lab is a Library management system for managing Book borrow details and storing the Books. Also, the Book lab was given the feature to request the borrow before coming to the library. Users can search their wanted book availability before they come to the Library.", demo_link: "https://dribbble.com/shots/22692811-Online-Job-Advertisement-Site", project_link: "https://github.com/Flashwork-G28" },
   ]
   const options = {
     margin: 30,
