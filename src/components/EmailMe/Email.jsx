@@ -7,7 +7,6 @@ const Email = (e) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-
     emailjs
       .sendForm(
         "service_zfhr45b",
