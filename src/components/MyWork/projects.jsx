@@ -54,7 +54,7 @@ const Projects = () => {
   return (
     <div className="mywork " id="work">
       <div className="mywork-title">
-        <h2>Check Out My Reacet Projects</h2>
+        <h2>Check Out My Contibuted Projects</h2>
 
         <h3>My Work</h3>
       </div>
