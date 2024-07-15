@@ -3,7 +3,6 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import projectimage from "../../images/decoration/project-01.png"
 import fitbotimage from "../../images/decoration/Fitbot.jpg"
 import flashworkimage from "../../images/decoration/FlashWork.png"
 import booklabimage from "../../images/decoration/BookLab.png"
@@ -54,7 +53,7 @@ const Projects = () => {
   return (
     <div className="mywork " id="work">
       <div className="mywork-title">
-        <h2>Check Out My Reacet Projects</h2>
+        <h2>Check Out My Contributed Projects</h2>
 
         <h3>My Work</h3>
       </div>
