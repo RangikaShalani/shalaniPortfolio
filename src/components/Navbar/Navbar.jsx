@@ -4,11 +4,6 @@ import homeIcon from "../../images/logo/w-sing.png"
 import { useState } from "react";
 
 const Navbar = () => {
-  // const [datavalue, setDatavalue] =useState("home");
-  // const redText = (pageValue) => {
-  //   setDatavalue(pageValue);
-  //   console.log(datavalue);
-  // };
   const [activeLink, setActiveLink] = useState("home");
 
   return (
