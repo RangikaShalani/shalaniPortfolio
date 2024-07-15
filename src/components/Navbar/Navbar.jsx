@@ -4,11 +4,6 @@ import homeIcon from "../../images/logo/w-sing.png"
 import { useState } from "react";
 
 const Navbar = () => {
-  // const [datavalue, setDatavalue] =useState("home");
-  // const redText = (pageValue) => {
-  //   setDatavalue(pageValue);
-  //   console.log(datavalue);
-  // };
   const [activeLink, setActiveLink] = useState("home");
 
   return (
@@ -65,6 +60,14 @@ const Navbar = () => {
                     onClick={() => setActiveLink("skills")}
                     className={activeLink === "skills" ? "active" : ""}
                   >
+                    <li
+                    // data-aos="fade-down"
+                    data-aos-duration="200"
+                    onClick={() => setActiveLink("blogs")}
+                    className={activeLink === "blogs" ? "active" : ""}
+                  >
+                    <a href="#blogs">Blogs</a>
+                  </li>
                     <a href="#skills">Skills</a>
                   </li>
 
