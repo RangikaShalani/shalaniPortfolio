@@ -8,6 +8,7 @@ import Projects from "./components/MyWork/projects";
 import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services";
 import Progress from "./components/SkillBars/progress";
+import Blogs from "./components/Blogs/Blogs";
 import $ from "jquery";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -45,6 +46,7 @@ function App() {
         </div>
         <AboutMe />
         <Projects />
+        <Blogs />
         <Progress />
         <Services />
         <ContactMe />
