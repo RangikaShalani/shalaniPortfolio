@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Blogs.css';
 
-const BlogCard = ({ imgSrc, author, date, title, subtitle, description, tags }) => {
+const BlogCard = ({ imgSrc, title, subtitle, description, tags }) => {
   return (
     <div className="card mb-4 shadow-sm">
       <div className="row no-gutters">
@@ -17,7 +17,6 @@ const BlogCard = ({ imgSrc, author, date, title, subtitle, description, tags }) 
             <h1 className="card-title">{title}</h1>
             <h2 className="card-subtitle mb-2 text-muted">{subtitle}</h2>
             <p className="card-text">{description}</p>
-            <p className="card-text"><small className="text-muted">By <a href="#">{author}</a> on {date}</small></p>
             <ul className="list-inline">
               {tags.map((tag, index) => (
                 <li key={index} className="list-inline-item badge bg-secondary text-dark me-1">{tag}</li>
@@ -41,8 +40,7 @@ const Blogs = () => {
 <div className="container py-5">
       <BlogCard
         imgSrc="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg"
-        author="John Doe"
-        date="Aug. 24, 2015"
+        
         title="Learning to Code"
         subtitle="Opening a door to the future"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
@@ -50,8 +48,7 @@ const Blogs = () => {
       />
       <BlogCard
         imgSrc="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg"
-        author="Jane Doe"
-        date="July. 15, 2015"
+       
         title="Mastering the Language"
         subtitle="Java is not the same as JavaScript"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
