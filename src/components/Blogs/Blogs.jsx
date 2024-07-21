@@ -1,63 +1,47 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Blogs.css';
-
-const BlogCard = () => {
-  return (
-    <div className="card mb-4 shadow-sm">
-        <h4>test</h4>
-      {/* <div className="row no-gutters">
-        <div className="col-md-4">
-          <div
-            className="blog-card-photo"
-            style={{ backgroundImage: `url(${imgSrc})` }}
-          ></div>
-        </div>
-        <div className="col-md-8">
-          <div className="card-body">
-            <h1 className="card-title">{title}</h1>
-            <h2 className="card-subtitle mb-2 text-muted">{subtitle}</h2>
-            <p className="card-text">{description}</p>
-            <ul className="list-inline">
-              {tags.map((tag, index) => (
-                <li key={index} className="list-inline-item badge bg-secondary text-dark me-1">{tag}</li>
-              ))}
-            </ul>
-            <p className="card-text text-end">
-              <a href="#" className="btn btn-primary">Read More</a>
-            </p>
-          </div>
-        </div>
-      </div> */}
-    </div>
-  );
-};
+import "./Blogs.css";
+import iconImage from "../../images/decoration/FlashWork.png";
+import shadowIcon from "../../images/decoration/Group-31.png";
 
 const Blogs = () => {
+
+  const serviesList = [
+    { icon_image: iconImage, service_name: "Frontend & Backend", service_description: "", shadow_icon: shadowIcon },
+    { icon_image: iconImage, service_name: "UI/UX Knowledge", service_description: "", shadow_icon: shadowIcon },
+    { icon_image: iconImage, service_name: "R & D New tools", service_description: "", shadow_icon: shadowIcon },
+  ]
+
   return (
-    <div className='blogs' id='blogs'>
+    <>
+      <section id="blogs" className='blogs'>
         <h3>Blogs</h3>
         <h2 className="text-center mb-5">Believe in yourself;<br />knowledge is the greatest weapon.</h2>
-<div className="container py-5">
-      <BlogCard
-        // imgSrc="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg"
-        
-        // title="Learning to Code"
-        // subtitle="Opening a door to the future"
-        // description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
-        // tags={['Learn', 'Code', 'HTML', 'CSS']}
-      />
-      <BlogCard
-        // imgSrc="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg"
-       
-        // title="Mastering the Language"
-        // subtitle="Java is not the same as JavaScript"
-        // description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
-        // tags={['Learn', 'Code', 'JavaScript']}
-      />
-    </div>
-    </div>
-    
+        <div className="container">
+          <div className="blog-cintainer">
+            <div className="blog-row">
+              {serviesList &&
+                serviesList.map((service) => (
+                  <div
+                    className="my-blogs"
+                    key={service.id}
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <img src={`${service.icon_image}`} className="blog-image" alt="" />
+                    <h4 className="web">{service.service_name}</h4>
+                    {/* <p className="service-info">{service.service_description}</p> */}
+                  </div>
+                ))}
+            </div>
+          </div>
+
+        </div>
+        <p><a class="fs-6 fst-italic mb-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Underline opacity 10</a></p>
+
+
+
+      </section>
+    </>
   );
 };
 
