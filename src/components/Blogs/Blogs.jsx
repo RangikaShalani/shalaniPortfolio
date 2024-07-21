@@ -36,7 +36,7 @@ const Blogs = () => {
           </div>
 
         </div>
-        <p><a class="fs-6 fst-italic mb-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Underline opacity 10</a></p>
+        <p><a class="fs-5 fst-italic mb-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://medium.com/@rangika2520">more ...</a></p>
 
 
 
