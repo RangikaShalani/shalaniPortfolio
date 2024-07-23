@@ -13,15 +13,17 @@
 }
 .my-service {
   background: var(--color-card2);
+  background-image: ürl("../../images/decoration/FlashWork.png");
   margin-bottom: 10px;
   position: relative;
   width: 280px;
   border-radius: 10px !important;
   padding: 0 10px 10px 10px;
   display: flex;
-  height: 380px;
+  height: 200px !important;
   overflow: hidden;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   cursor: pointer;
   text-align: center;
