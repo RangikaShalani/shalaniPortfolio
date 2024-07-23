@@ -60,15 +60,16 @@ const Navbar = () => {
                     onClick={() => setActiveLink("skills")}
                     className={activeLink === "skills" ? "active" : ""}
                   >
-                    <li
+                    
+                    <a href="#skills">Skills</a>
+                  </li>
+                  <li
                     // data-aos="fade-down"
                     data-aos-duration="200"
                     onClick={() => setActiveLink("blogs")}
                     className={activeLink === "blogs" ? "active" : ""}
                   >
                     <a href="#blogs">Blogs</a>
-                  </li>
-                    <a href="#skills">Skills</a>
                   </li>
 
                   <li

@@ -29,7 +29,7 @@ const Services = () => {
                   data-aos="zoom-in-up"
                   data-aos-duration="1500"
                 >
-                  <img src={`${service.icon_image}`} className="blog-image" alt="" />
+                  {/* <img src={`${service.icon_image}`} className="blog-image" alt="" /> */}
                   <h4 className="web">{service.service_name}</h4>
                   {/* <p className="service-info">{service.service_description}</p> */}
                 </div>
